@@ -6,7 +6,6 @@ class Student(val name: String, val surname: String) {
     }
 
     fun addMessage(messageText: String) {
-        //tutaj może być singleton wiadomosciWSIZ
         val message = message(messageText, toString())
         val wiadomosciWSIZ = wiadomosciWSIZ.getInstance()
 
