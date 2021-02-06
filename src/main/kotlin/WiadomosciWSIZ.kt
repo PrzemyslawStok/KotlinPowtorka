@@ -1,5 +1,5 @@
 class wiadomosciWSIZ private constructor(){
-    val messages = listOf<message>()
+    val messages = mutableListOf<message>()
 
     companion object{
         private var INSTANCE: wiadomosciWSIZ? = null
@@ -13,11 +13,11 @@ class wiadomosciWSIZ private constructor(){
     }
 
     fun addMessage(message: message){
-
+        messages.add(message)
     }
 
     fun printAll(){
-
+        messages.forEach(::println)
     }
 
 }
