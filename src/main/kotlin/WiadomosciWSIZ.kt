@@ -1,4 +1,4 @@
-class wiadomosciWSIZ(){
+class wiadomosciWSIZ private constructor(){
     val messages = listOf<message>()
 
     companion object{

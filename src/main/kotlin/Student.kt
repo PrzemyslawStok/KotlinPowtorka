@@ -6,6 +6,7 @@ class Student(val name: String, val surname: String) {
 
     fun addMessage(){
         //tutaj może być singleton wiadomosciWSIZ
+        val wiadomosciWSIZ = wiadomosciWSIZ() //konstruktor jest zabezpieczony
 
     }
 }
